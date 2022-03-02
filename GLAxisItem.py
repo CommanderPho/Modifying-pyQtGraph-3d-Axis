@@ -1,8 +1,16 @@
-from OpenGL.GL import *
-from .. GLGraphicsItem import GLGraphicsItem
-from . GLTextItem import GLTextItem
-from ... import QtGui
 from math import floor
+
+import pyqtgraph as pg
+from pyqtgraph.Qt import QtCore, QtGui, QtWidgets
+import pyqtgraph.opengl as gl # for 3D raster plot
+
+from pyqtgraph.opengl.GLGraphicsItem import GLGraphicsItem
+from pyqtgraph.opengl.items.GLTextItem import GLTextItem
+
+# from OpenGL.GL import *
+# from .. GLGraphicsItem import GLGraphicsItem
+# from . GLTextItem import GLTextItem
+# from ... import QtGui
 
 __all__ = ['GLAxisItem']
 

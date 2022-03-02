@@ -1,6 +1,12 @@
-from OpenGL.GL import *
-from .. GLGraphicsItem import GLGraphicsItem
-from ... import QtGui
+import pyqtgraph as pg
+from pyqtgraph.Qt import QtCore, QtGui, QtWidgets
+import pyqtgraph.opengl as gl # for 3D raster plot
+
+# from OpenGL.GL import *
+# from .. GLGraphicsItem import GLGraphicsItem
+# from ... import QtGui
+
+from pyqtgraph.opengl.GLGraphicsItem import GLGraphicsItem
 
 class GLTextItem(GLGraphicsItem):
     def __init__(self, X=None, Y=None, Z=None, text=None, color = (255, 255, 255, 255), size = 32):
